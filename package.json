@@ -1,0 +1,38 @@
+{
+  "name": "client_base_v5",
+  "version": "1.0.0",
+  "description": "New project for Client Base v5",
+  "main": "index.js",
+  "scripts": {
+    "test:reporter": "mocha --config .mocharc.js --reporter mochawesome",
+    "test": "mocha --spec tests/**/*.js --config .mocharc.js",
+    "auth-test": "mocha --spec tests/auth.spec.js --config .mocharc.js",
+    "pm-run": "newman run postman/CBv5_Base.postman_collection.json -e postman/CBv5.postman_environment.json",
+    "pm-report": "newman run postman/CBv5_Base.postman_collection.json -e postman/CBv5.postman_environment.json -r htmlextra --reporter-htmlextra-export MyReports/pmReport.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alinka055/Client_Base_v5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alinka055/Client_Base_v5/issues"
+  },
+  "homepage": "https://github.com/Alinka055/Client_Base_v5#readme",
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/register": "^7.21.0",
+    "@faker-js/faker": "^7.6.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "newman": "^5.3.2",
+    "newman-reporter-htmlextra": "^1.22.11",
+    "prettier": "^2.8.7",
+    "supertest": "^6.3.3"
+  }
+}
