@@ -12,15 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Alinka055/Client_Base_v5.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Alinka055/Client_Base_v5/issues"
   },
-  "homepage": "https://github.com/Alinka055/Client_Base_v5#readme",
   "dependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
